@@ -73,6 +73,14 @@ These apps don't ask for plugin settings, so connect your server once as a custo
 
 The skills then use the tools of that connector. If you added the plugin in one of these apps and it appears in Claude Code without a server URL, set the URL with `claude plugin configure unopim` as above, or keep using the custom connector, which Claude Code can use too. On Team and Enterprise plans, an Owner adds the custom connector for the organization, and each member connects with their own UnoPim account.
 
+## Example prompts
+
+- "Audit the enabled products in the Clothing family and list the ones missing a description or a required attribute."
+- "Write an English and German description for SKU TSHIRT-001 from its existing attributes, show me the changes, and save them after I approve."
+- "Create a select attribute `material` with the options cotton, wool and linen, and add it to the General group of the Clothing family."
+- "Did last night's product import finish? Show me the rows that failed and why."
+- "Which locales and currencies are active on the default channel?"
+
 ## Tools
 
 The tools come from the `unopim/mcp` package on your server:
