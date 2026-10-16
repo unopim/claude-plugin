@@ -97,6 +97,8 @@ Search and get tools only read data and are annotated as read-only. Upsert tools
 - **Storage and retention:** the plugin stores nothing. Your catalog data stays in your UnoPim database under your own retention rules. Conversations follow your Claude account's data settings.
 - **Permissions:** every tool checks the signed-in admin's UnoPim role, and the server refuses tokens of a disabled admin.
 
+See the UnoPim [privacy policy](https://unopim.com/privacy-policy/), [terms of service](https://unopim.com/term-of-service/) and [sub-processors](https://unopim.com/sub-processors/).
+
 ## Support
 
 - Issues and questions: [github.com/unopim/unopim-mcp/issues](https://github.com/unopim/unopim-mcp/issues)

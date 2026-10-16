@@ -14,7 +14,7 @@
   "icon": "./assets/icon.svg",
   "documentationUrl": "https://github.com/unopim/unopim-mcp#readme",
   "supportUrl": "https://github.com/unopim/unopim-mcp/issues",
-  "privacyPolicyUrl": "https://webkul.com/privacy-policy/",
+  "privacyPolicyUrl": "https://unopim.com/privacy-policy/",
   "userConfig": {
     "mcp_url": {
       "type": "string",
