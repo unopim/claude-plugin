@@ -17,7 +17,7 @@ The plugin contains no scripts, hooks, binaries or package installs. It runs not
 ## Requirements
 
 - A UnoPim install reachable over **HTTPS**.
-- The [`unopim/mcp`](https://github.com/unopim/unopim-mcp) package, version 1.0.4 or later, installed on that UnoPim server. It is open source under the MIT license.
+- The [`unopim/mcp`](https://github.com/unopim/unopim-mcp) package, version 1.0.5 or later, installed on that UnoPim server. It is open source under the MIT license.
 - A UnoPim admin account. Claude can do only what that account's role allows.
 
 ## Set up your UnoPim server
@@ -50,7 +50,17 @@ Every UnoPim install has its own address, so you tell Claude where yours is. You
 ### Claude Code
 
 1. Add the UnoPim plugin from the Claude directory, or run `/plugin` and find it under the directory.
-2. When asked for **UnoPim MCP server URL**, enter your endpoint. You can change it later in `/config`.
+2. When asked for **UnoPim MCP server URL**, enter your endpoint. From a terminal, you can install and set it in one step:
+
+   ```bash
+   claude plugin install unopim --config mcp_url=https://pim.example.com/mcp/unopim
+   ```
+
+   To change it later, run `claude plugin configure unopim` to see the current value, and set a new one with:
+
+   ```bash
+   echo '{"mcp_url": "https://pim.example.com/mcp/unopim"}' | claude plugin configure unopim --values-stdin
+   ```
 3. Run `/mcp`, select `unopim` and sign in. Your browser opens the UnoPim sign-in and consent screen; sign in with your UnoPim admin account and approve access.
 
 ### Claude on the web, desktop and mobile, and Cowork
@@ -61,7 +71,7 @@ These apps don't ask for plugin settings, so connect your server once as a custo
 2. Open your connector settings, choose **Add custom connector**, name it `UnoPim` and enter your endpoint as the URL.
 3. Select **Connect**, sign in with your UnoPim admin account and approve access.
 
-The skills then use the tools of that connector. On Team and Enterprise plans, an Owner adds the custom connector for the organization, and each member connects with their own UnoPim account.
+The skills then use the tools of that connector. If you added the plugin in one of these apps and it appears in Claude Code without a server URL, set the URL with `claude plugin configure unopim` as above, or keep using the custom connector, which Claude Code can use too. On Team and Enterprise plans, an Owner adds the custom connector for the organization, and each member connects with their own UnoPim account.
 
 ## Tools
 
