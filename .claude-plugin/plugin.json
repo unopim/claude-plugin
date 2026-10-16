@@ -1,0 +1,26 @@
+{
+  "name": "unopim",
+  "displayName": "UnoPim",
+  "version": "1.0.0",
+  "description": "Search, enrich and manage your self-hosted UnoPim product catalog from Claude: products, categories, attributes, families, channels, locales and currencies, plus import and export job status, with every action limited by your UnoPim role permissions.",
+  "author": {
+    "name": "UnoPim",
+    "url": "https://unopim.com"
+  },
+  "homepage": "https://unopim.com",
+  "repository": "https://github.com/unopim/claude-plugin",
+  "license": "MIT",
+  "keywords": ["pim", "product-information-management", "catalog", "ecommerce", "product-data", "unopim"],
+  "icon": "./assets/icon.svg",
+  "documentationUrl": "https://github.com/unopim/unopim-mcp#readme",
+  "supportUrl": "https://github.com/unopim/unopim-mcp/issues",
+  "privacyPolicyUrl": "https://webkul.com/privacy-policy/",
+  "userConfig": {
+    "mcp_url": {
+      "type": "string",
+      "title": "UnoPim MCP server URL",
+      "description": "The MCP endpoint of your own UnoPim install, for example https://pim.example.com/mcp/unopim. It must use https.",
+      "required": true
+    }
+  }
+}
