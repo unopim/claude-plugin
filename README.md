@@ -94,7 +94,8 @@ Search and get tools only read data and are annotated as read-only. Upsert tools
 - **Where data goes:** the plugin sends requests only to the UnoPim URL you enter. That server is yours. The plugin sends nothing to the UnoPim project, Webkul or any other third party, and it has no analytics or telemetry.
 - **What is sent:** the tool requests Claude makes on your behalf, such as search filters, SKUs and product values to save. Responses contain catalog data from your UnoPim install, which Claude reads to answer you.
 - **Sign-in:** OAuth through your UnoPim server. The plugin stores no passwords or tokens in its files; Claude stores the OAuth token that your server issues.
-- **Storage and retention:** the plugin stores nothing. Your catalog data stays in your UnoPim database under your own retention rules. Conversations follow your Claude account's data settings.
+- **Storage and retention:** the plugin stores nothing. Values you save through Claude are written to your UnoPim database and kept until you change or delete them, like any edit made in the admin panel. For each create or update call, your UnoPim server also writes an audit entry (admin user id, IP address and the call's arguments) to its own application log. Both stay on your server under your own retention rules. Conversations follow your Claude account's data settings.
+- **Personal data:** the tools return catalog data only: products, attributes, families, categories, channels, locales, currencies and import or export jobs. They do not return admin or customer records.
 - **Permissions:** every tool checks the signed-in admin's UnoPim role, and the server refuses tokens of a disabled admin.
 
 See the UnoPim [privacy policy](https://unopim.com/privacy-policy/), [terms of service](https://unopim.com/term-of-service/) and [sub-processors](https://unopim.com/sub-processors/).
