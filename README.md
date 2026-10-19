@@ -17,7 +17,7 @@ The plugin contains no scripts, hooks, binaries or package installs. It runs not
 ## Requirements
 
 - A UnoPim install reachable over **HTTPS**.
-- The [`unopim/mcp`](https://github.com/unopim/unopim-mcp) package, version 1.0.5 or later, installed on that UnoPim server. It is open source under the MIT license.
+- The [`unopim/mcp`](https://github.com/unopim/unopim-mcp) package, version 1.0.6 or later, installed on that UnoPim server. It is open source under the MIT license.
 - A UnoPim admin account. Claude can do only what that account's role allows.
 
 ## Set up your UnoPim server

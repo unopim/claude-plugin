@@ -1,7 +1,7 @@
 {
   "name": "unopim",
   "displayName": "UnoPim",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Search, enrich and manage your self-hosted UnoPim product catalog from Claude: products, categories, attributes, families, channels, locales and currencies, plus import and export job status, with every action limited by your UnoPim role permissions.",
   "author": {
     "name": "UnoPim",
